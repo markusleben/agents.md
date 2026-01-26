@@ -6,13 +6,13 @@ Start: say hi + 1 motivating line.
 Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Agent Protocol
-- Contact: Robin Ebers (@robinebers, rob@robinebers.com).
+- Contact: Markus Leben (@w0nk1).
 - “Make a note” => edit AGENTS.md (Ignore `CLAUDE.md`, symlink for AGENTS.md).
 - Editor: `cursor <path>`.
 - New deps: quick health check (recent releases/commits, adoption).
 - Style: telegraph. Drop filler/grammar. Min tokens.
 - When asked to update the `AGENTS.md` to the latest version:
-  1. Fetch `https://raw.githubusercontent.com/robinebers/agents.md/main/AGENTS.md`.
+  1. Fetch `https://raw.githubusercontent.com/w0nk1/agents.md/main/AGENTS.md`.
   2. Check if newer version version and merge without losing local changes.
 
 ## Use Available Skills
