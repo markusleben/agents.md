@@ -5,13 +5,16 @@ Version: 0.25 (2026-02-01)
 Start: say hi + 1 motivating line.
 Work style: Be radically precise. No fluff. Pure information only (drop grammar; min tokens).
 
+## Project
+- GitHub User: see `.env` <GH_USER>
+
 ## Agent Protocol
-- Contact: Markus Leben (@w0nk1).
+- Contact: Markus Leben (@markusleben).
 - “Make a note” => edit AGENTS.md (Ignore `CLAUDE.md`, symlink for AGENTS.md).
 - Editor: `cursor <path>`.
 - New deps: quick health check (recent releases/commits, adoption).
 - When asked to update the `AGENTS.md` to the latest version:
-  1. Fetch `https://raw.githubusercontent.com/w0nk1/agents.md/main/AGENTS.md`.
+  1. Fetch `https://raw.githubusercontent.com/markusleben/agents.md/main/AGENTS.md`.
   2. Check if newer version version and merge without losing local changes.
 
 ## Guardrails
@@ -33,6 +36,8 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 
 ## Git
 - Always use `gh` to communicate with GitHub.
+- **Multi-Account:** Before remote ops (push, repo create, PR), run `gh auth status`. If active account ≠ `Project.GitHub Account`, ask user before proceeding.
+- Use `gh auth switch --user <GitHub User>` to switch between GitHub accounts.
 - GitHub CLI for PRs/CI/releases. Given issue/PR URL (or `/pull/5`): use `gh`, not web search.
 - Examples: `gh issue view <url> --comments -R owner/repo`, `gh pr view <url> --comments --files -R owner/repo`.
 - Conventional branches (`feat|fix|refactor|build|ci|chore|docs|style|perf|test`).
