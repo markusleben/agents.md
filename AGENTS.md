@@ -18,6 +18,7 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
   2. Check if newer version version and merge without losing local changes.
 
 ## Guardrails
+- Always write comments and documentation in English only.
 - Use `trash` for deletes.
 - Use `mv` / `cp` to move and copy files.
 - Bugs: add regression test when it fits.
@@ -59,6 +60,8 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 ## Backwards Compat
 - Local/uncommitted: none needed; rewrite as if fresh.
 - In main: probably needed, ask user.
+- Before public release, do not add backward-compatibility paths or fallback behavior. Implement the clean target model.
+
 
 ## Critical Thinking
 - Fix root cause (not band-aid).
