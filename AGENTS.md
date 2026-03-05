@@ -35,11 +35,6 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 - Research: Exa to websearch early, and Ref to seek specific documention or web fetch.
 - Best results: Quote exact errors; prefer 2025-2026 sources.
 
-## Code Quality
-- All generated code must be self-reviewed before being presented.
-- Continue reviewing and fixing until no further issues are found.
-- Do not show partial or unreviewed code to the user.
-
 ## Git
 - Always use `gh` to communicate with GitHub.
 - **Multi-Account:** Before remote ops (push, repo create, PR), run `gh auth status`. If active account ≠ `Project.GitHub Account`, ask user before proceeding.
@@ -82,9 +77,10 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 -- Answer these privately, then act:
    1) Was the initial task fully completed?
    2) If a definition-of-done was provided, did you run and verify every item?
-   3) Are you about to stop to ask a question?
+   3) Did you self-review ALL written/edited code? (Tests passing ≠ reviewed)
+   4) Are you about to stop to ask a question?
       - If yes: is the question actually blocking forward progress?
-   4) Can the question be answered by choosing an opinionated default?
+   5) Can the question be answered by choosing an opinionated default?
       - If yes: choose a default, document it in , and continue.
 - When you choose opinionated defaults, document them in `/docs/choices.md` as you work.
 - Leave breadcrumb notes in thread and `/docs/breadcrumbs.md`.
@@ -93,7 +89,6 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 -- Ask exclusively blocking question only.
 -- Explain why it is blocking and what you will do once answered.
 -- Provide your best default/assumption as an alternative if the user does not care.
-
 ## Useful Tidbits
 - When using Vercel AI Gateway, use a single API key across the project, not individual providers.
 - When using Convex, run `bunx convex dev --once` to verify, not `bunx convex codegen`.
