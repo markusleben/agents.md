@@ -35,6 +35,11 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 - Research: Exa to websearch early, and Ref to seek specific documention or web fetch.
 - Best results: Quote exact errors; prefer 2025-2026 sources.
 
+## Code Quality
+- All generated code must be self-reviewed before being presented.
+- Continue reviewing and fixing until no further issues are found.
+- Do not show partial or unreviewed code to the user.
+
 ## Git
 - Always use `gh` to communicate with GitHub.
 - **Multi-Account:** Before remote ops (push, repo create, PR), run `gh auth status`. If active account ≠ `Project.GitHub Account`, ask user before proceeding.
